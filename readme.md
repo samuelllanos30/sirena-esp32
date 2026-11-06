@@ -11,7 +11,10 @@
 ## Enlace a la Simulacion en Wokwi
 Puedes ejecutar y probar la simulacion interactiva directamente en el siguiente enlace:  
 **[Ver Simulacion en Wokwi](https://wokwi.com/projects/479675991136103425)**
-
+## 🚀 Instrucciones de Ejecución
+1. Abrir el enlace de **Wokwi**.
+2. Hacer clic en el botón **Play (Iniciar Simulación)**.
+3. Interactuar con el potenciómetro de gas o el botón de pánico para observar el comportamiento en consola y actuadores.
 ---
 
 ## Descripcion del Proyecto
