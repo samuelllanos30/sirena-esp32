@@ -1,3 +1,4 @@
+# Bucle principal de control no bloqueante para Sirena Comunitaria ESP32
 import time
 import ujson
 from actuators import Actuadores
