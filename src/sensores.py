@@ -1,5 +1,6 @@
-from machine import Pin, ADC
 
+from machine import Pin, ADC
+# Valor retornado entre 0 y 4095 (Resolución de 12 bits para 0-3.3V)
 class Sensores:
     def __init__(self, pin_mq2=34, pin_boton=12):
         # Configuración del sensor de gas analógico (ADC)
