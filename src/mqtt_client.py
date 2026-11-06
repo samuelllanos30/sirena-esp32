@@ -1,3 +1,4 @@
+# Cliente MQTT configurado para broker público (broker.hivemq.com)
 import network
 import time
 import umqtt.simple
