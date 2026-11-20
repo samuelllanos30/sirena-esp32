@@ -3,6 +3,7 @@ import random
 from datetime import datetime
 import flet as ft
 from estado import EstadoSistema
+from interfaz.interfaz import estado
 
 def main(page: ft.Page):
     # --- CONFIGURACIÓN DE LA VENTANA PRINCIPAL ---
@@ -213,6 +214,12 @@ def main(page: ft.Page):
             registrar_evento("SIRENA SILENCIADA", "Alarma desactivada manualmente desde el panel", es_alerta=False)
             refrescar_vista()
 
+    def simular_pulsador_fisico(e):
+        if estado.sirena_activa:
+            silenciar_sirena()
+        else:
+            activar_sirena("Pulsador Físico Comunitario (GPIO 12)")
+
     def cambiar_gas_manual(e):
         estado.simulacion_auto = False
         switch_auto.value = False
@@ -348,6 +355,7 @@ def main(page: ft.Page):
                             expand=True,
                             height=45,
                             on_click=silenciar_sirena,
+                        ),
                         ),
                     ],
                     spacing=12,
